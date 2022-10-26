@@ -1,4 +1,4 @@
-﻿using Enums.Models;
+﻿using Enums.DTOs;
 using Enums.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,7 +16,7 @@ namespace Enums.Controllers
         }
 
         [HttpGet]
-        public ActionResult<Ticket> Get()
+        public ActionResult<List<GetTicketDto>> Get()
         {
             return Ok(_service.GetAllTickets());
         }
