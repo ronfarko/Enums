@@ -14,8 +14,12 @@ namespace Enums.Services
         }
 
         private readonly List<Ticket>? _ticketList = new List<Ticket>  {
-            new Ticket() {Id = 1, Description = "First Ticket", Issuer = "John", Status = TicketStatus.OPEN },
-            new Ticket() {Id = 2, Description = "Second Ticket", Issuer = "Joe", Status = TicketStatus.IN_PROG }
+            new Ticket() {
+                Id = 1, Description = "First Ticket", Issuer = "John", Status = TicketStatus.OPEN 
+            },
+            new Ticket() {
+                Id = 2, Description = "Second Ticket", Issuer = "Joe", Status = TicketStatus.IN_PROG 
+            }
         };
 
         public List<GetTicketDto>? GetAllTickets()
